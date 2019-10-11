@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">ConvCalc</string>
+    <string name="from">From</string>
+    <string name="title">Length Converter</string>
+    <string name="toLabel">To</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string-array name="length">
+
+
+        <item>Yards</item>
+        <item>Meters</item>
+        <item>Miles</item>
+
+    </string-array>
+
+    <string-array name="length1">
+
+
+        <item>Meters</item>
+        <item>Yards</item>
+        <item>Miles</item>
+
+    </string-array>
+
+
+
+    <string-array name="volume">
+
+        <item>Gallons</item>
+        <item>Liters</item>
+        <item>Quarts</item>
+
+    </string-array>
+
+    <string-array name="volume1">
+
+
+        <item>Liters</item>
+        <item>Gallons</item>
+        <item>Quarts</item>
+
+    </string-array>
+
+
+
+
+
+
+
+
+</resources>
