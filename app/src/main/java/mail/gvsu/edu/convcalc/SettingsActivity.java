@@ -21,8 +21,6 @@ public class  SettingsActivity extends AppCompatActivity {
     private String fromSelector2 = "";
     private String toSelector2 = "";
 
-//    public static int position = 0;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +115,11 @@ public class  SettingsActivity extends AppCompatActivity {
             spinner.setAdapter(fromAdapter);
             spinner1.setAdapter(toAdapter);
 
+
+            int spinnerPosition = fromAdapter.getPosition(unit1);
+            int spinner1Position = toAdapter.getPosition(unit2);
+            spinner.setSelection(spinnerPosition);
+            spinner1.setSelection(spinner1Position);
 
             spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
