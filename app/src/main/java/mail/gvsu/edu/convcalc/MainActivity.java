@@ -166,7 +166,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.settings_item)
         {
+            SettingsActivity settingsActivity = new SettingsActivity();
+            TextView fromUnit = (TextView) findViewById(R.id.FromUnit);
+            TextView toUnit = (TextView) findViewById(R.id.ToUnit);
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            intent.putExtra("unit1", fromUnit.getText());
+            intent.putExtra("unit2", toUnit.getText());
             startActivityForResult(intent,VICE_SELECTION1);
 //            startActivityForResult(intent,VICE_SELECTION2);
         }else {
